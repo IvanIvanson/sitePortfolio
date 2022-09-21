@@ -60,6 +60,7 @@ body{
 .main-left h1{
     letter-spacing: 3px;
     word-spacing: 15px;
+    padding-top: 10px;
     font-size: var(--main-fs-h1);
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
@@ -77,16 +78,17 @@ body{
 }
 .social li{
     display: inline;
-    font-size: var(--main-fs-p);
+    font-size: calc(var(--main-fs-p) + 15px);
 }
 .social li:not(:first-child){
-    padding-left: 10px;
+    padding-left: 20px;
 }
 li > a{
     text-decoration: none;
+    color:#0cc2f5;
 }
 li > a:hover{
-    color:deepskyblue;
+    color:rgb(14, 61, 95);
 }
 .main-right{
    
