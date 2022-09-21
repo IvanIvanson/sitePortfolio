@@ -4,10 +4,26 @@
     --main-fs-nav:30px;
     
 }
-body{
+*{
    margin: 0;
-   padding: 0;
+   padding: 0; 
+}
+html,
+body{
    font-family: 'Montserrat', sans-serif;
+   height: 100%;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content{
+    flex:1 0 auto;
+}
+.footer{
+     flex:0 0 auto;
+     height: 100px;
 }
 .navbar{
    display: flex;
