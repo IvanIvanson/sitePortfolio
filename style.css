@@ -148,7 +148,6 @@ gap:20px;
 .hardskills-left{
     flex-grow:1;
     min-width: 300px;
-    background: url('./images/hardskills.jpg');
 display: flex;
 /* border:solid red; */
 }
