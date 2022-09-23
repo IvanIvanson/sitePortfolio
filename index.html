@@ -20,7 +20,7 @@
     <div class="conteiner">
 <div class="content">
 
-     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light justify-content-between">
     <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
     
     
@@ -49,8 +49,9 @@
 </nav>
 <main class="main bg-light">
 
-<div class="main-left item" data-aos="fade-left">
-    <div class="hello bg-info text-white">
+<div class="main-left item">
+    <!-- data-aos="fade-left" -->
+    <div class="hello bg-info text-white" data-aos="fade-left">
        <p>Привет! Я</p>
     </div>
     <h1 class="text-dark text-uppercase">Иван Галут</h1>
@@ -63,23 +64,27 @@
     </ul>
     
 </div>
-<div class="main-right item" data-aos="fade-right">
-    <div class="main-rigt wrapper">
-         <!-- <img src="./images/img1.png" alt="img1"> -->
+<div class="main-right item">
+    <!-- data-aos="fade-right" -->
+    <div class="main-rigt wrapper" data-aos="fade-right">
+        
     </div>
 </div>
 
 </main>
+
 <div class="skills bg-light">
+    <!-- data-aos="fade-down" -->
     <h1 class="skills-h1" data-aos="fade-down">Навыки и Умения</h1>
     <div class="hardskills">
 
-        <div class="hardskills-left" data-aos="fade-right">
-           <img src="./images/hardskills.jpg" class="img-fluid" alt="Responsive image"> 
+        <div class="hardskills-left">
+            <!-- data-aos="fade-right" -->
+           <img src="./images/hardskills.jpg" class="img-fluid" alt="Responsive image" data-aos="fade-right"> 
         </div>
         
-
-<div class="hardskills-right" data-aos="fade-left">
+<!-- data-aos="fade-left" -->
+<div class="hardskills-right" data-aos="fade-down">
         
         <div class="progress" style="height: 30px;">
             <span><i class="fa-brands fa-html5"></i></span>
@@ -131,10 +136,12 @@
 </div>
     </div>
     <div class="softskills">
-        <div class="hardskills-left" data-aos="fade-left">
-            <img src="./images/softskills.jpg" class="img-fluid" alt="Responsive image">
+        <div class="hardskills-left">
+            <!-- data-aos="fade-left" -->
+            <img src="./images/softskills.jpg" class="img-fluid" alt="Responsive image" data-aos="fade-right">
         </div>
-        <div class="hardskills-right" data-aos="fade-right">
+        <!-- data-aos="fade-right" -->
+        <div class="hardskills-right" data-aos="fade-up">
 <ul class="content-skill">
 <li>логическое мышление</li>
 <li>внимательность и умение фокусироваться</li>
