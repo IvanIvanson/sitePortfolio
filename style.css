@@ -12,6 +12,7 @@ html,
 body{
    font-family: 'Montserrat', sans-serif;
    height: 100%;
+   
 }
 .conteiner{
     display: flex;
@@ -191,6 +192,21 @@ gap:20px;
     padding-left: 150px;
     /* border:solid red; */
 }
+#btn{
+    border: none;
+    background: #369;
+    color: deepskyblue;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    margin-top: 85vh;
+    margin-left: 90vw;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #888;
+    cursor: pointer;
+    outline: none;
+}
 @media (max-width:1025px){
 .main-left{
     
@@ -260,6 +276,21 @@ gap:20px;
     padding-left: 50px;
     /* border:solid red; */
 }
+#btn{
+    border: none;
+    background: #369;
+    color: deepskyblue;
+    font-size: 40px;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    margin-top: 75vh;
+    margin-left: 80vw;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #888;
+    cursor: pointer;
+    outline: none;
+}
 }
 @media (max-width:426px){
     .main{
@@ -315,5 +346,20 @@ gap:20px;
     flex-grow: 1;
     padding: 10px;
     /* border:solid red; */
+}
+#btn{
+    border: none;
+    background: #369;
+    color: deepskyblue;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    margin-top: 85vh;
+    margin-left: 80vw;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #888;
+    cursor: pointer;
+    outline: none;
 }
 }

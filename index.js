@@ -36,3 +36,41 @@ window.addEventListener('scroll', function () {
     })
     
 })
+const btn = document.querySelector('#btn');
+const background = document.querySelectorAll(".changebg");
+const colortext = document.querySelectorAll(".colortext");
+const changeBgDark = function () {
+    logo.src = "./images/logo-lite.png";
+    background.forEach((item) => {
+        item.classList.add("bg-dark");
+        item.classList.remove("bg-light");
+    });
+    colortext.forEach((item) => {
+        item.classList.add("text-light");
+    });
+}
+const changeBgLight = function () {
+     logo.src = "./images/logo.png";
+  background.forEach((item) => {
+    item.classList.add("bg-light");
+    item.classList.remove("bg-dark");
+  });
+    colortext.forEach((item) => {
+      item.classList.remove("text-light");
+    });
+};
+let flag = true;
+btn.addEventListener('click', function () {
+    
+    if (flag === false) {
+        changeBgLight();
+        btn.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+         flag = true;
+    } else {
+        changeBgDark();
+      btn.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+      flag = false;
+    }
+     
+   
+})
