@@ -137,6 +137,7 @@ li > a:hover{
     text-align: center;
     font-size: var(--main-fs-h1);
     padding-top: 0;
+    text-transform: uppercase;
 }
 .hardskills{
     width: 100%;
@@ -157,6 +158,7 @@ display: flex;
     border-radius: 20px;
     box-shadow: 0 0  20px #999;
 }
+
 .hardskills-right{
     min-width: 300px;
     /* max-width: 700px; */
@@ -191,6 +193,51 @@ gap:20px;
     flex-grow: 1;
     padding-left: 150px;
     /* border:solid red; */
+}
+.achievements{
+     padding: 50px 20vmin;
+
+}
+.achievements-items{
+     width: 100%;
+padding-top: 50px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap:20px;
+}
+.achievements-itemsleft{
+flex-grow:1;
+    min-width: 300px;
+    max-width: 700px;
+display: flex;
+}
+.achievements-itemsleft img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0  20px #999;
+}
+.achievements-itemsright{
+     min-width: 300px;
+    
+   font-size: calc(var(--main-fs-p) - 5px);
+    flex:1;
+}
+.achievements-itemsright.one{
+     padding-left: 150px;
+     
+}
+.achievements-itemsright.two{
+    padding-right: 150px;
+    
+}
+.content-itemsright{
+     list-style-type: circle;
+    font-size: calc(var(--main-fs-p) - 5px);
+    min-width: 300px;
+    max-width: 500px;
+    flex-grow: 1;
+    
 }
 #btn{
     border: none;
@@ -291,6 +338,22 @@ gap:20px;
     cursor: pointer;
     outline: none;
 }
+.achievements-itemsright{
+     min-width: 300px;
+     
+   font-size: calc(var(--main-fs-p) - 10px);
+    flex:1;
+}
+.achievements-itemsright.one{
+
+     padding-left: 20px;
+     
+}
+.achievements-itemsright.two{
+    padding-right: 20px;
+    order:2;
+    
+}
 }
 @media (max-width:426px){
     .main{
@@ -338,6 +401,9 @@ gap:20px;
     text-align: center;
     font-size: calc(var(--main-fs-h1) - 20px);
     padding-top: 0;
+    max-width: 300px;
+    
+    /* word-break:break-all; */
 }
 .content-skill{
     list-style-type: circle;
@@ -362,4 +428,39 @@ gap:20px;
     cursor: pointer;
     outline: none;
 }
+.achievements-items{
+align-items: center;
+justify-content: center;
+}
+.achievements-itemsright.two{
+    padding-left: 0px;
+}
+.h1{
+     font-size: calc(var(--main-fs-h1) - 25px);
+    
+    min-width:300px;
+    align-self:flex-start;
+    }
+.content-itemsright{
+    font-size: calc(var(--main-fs-p) - 10px);
+  
+}
+.achivements-h1{
+    display: block;
+    padding-right: 100px;
+   
+  text-align: center;
+}
+.achievements-itemsright.one{
+
+     padding-left: 0px;
+      margin-right: 0;
+}
+.achievements-itemsright.two{
+    padding-right: 0px;
+   
+    order:2;
+    
+}
+
 }
