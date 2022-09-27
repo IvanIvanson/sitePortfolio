@@ -232,7 +232,7 @@ display: flex;
 }
 .achievements-itemsright.two{
     padding-right: 150px;
-    
+   
 }
 .content-itemsright{
      list-style-type: circle;
@@ -240,7 +240,7 @@ display: flex;
     min-width: 300px;
     max-width: 500px;
     flex-grow: 1;
-    
+    padding-left: 50px;
 }
 #btn{
     border: none;
@@ -405,7 +405,7 @@ display: flex;
     text-align: center;
     font-size: calc(var(--main-fs-h1) - 20px);
     padding-top: 0;
-    max-width: 300px;
+    /* max-width: 300px; */
     
     /* word-break:break-all; */
 }
@@ -458,7 +458,8 @@ justify-content: center;
 }
 .achievements-itemsright.one{
 
-     padding-left: 0px;
+     padding-left: 0;
+     padding-right: 0;
       margin-right: 0;
       
 }
