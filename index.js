@@ -2,7 +2,7 @@ const barScroll = document.querySelectorAll('.progress-bar');
 const navbar = document.querySelector('.navbar');
 const navbarNav = document.querySelector(".nav-link");
 const logo = document.querySelector(".logo");
- 
+const navItems = document.querySelectorAll(".nav-item");
 
 window.addEventListener('scroll', function () {
     let attrLogo = logo.getAttribute("src"); 
@@ -73,4 +73,23 @@ btn.addEventListener('click', function () {
     }
      
    
-})
+});
+
+navItems.forEach((item) => {
+  item.addEventListener('click', function (event) {
+   
+      // event.classList.toggle('active')
+    if (event.target.parentNode.className === "nav-item active colortext") {
+      // event.target.parentNode.classList.remove("active");
+      // event.target.style.color = "#888";
+      // alert(event.target.parentNode.className);
+    }  if (event.target.parentNode.className != "nav-item active colortext") {
+      event.target.parentNode.classList.add("active");
+
+      event.target.style.color = "white";
+    } else {
+      event.target.parentNode.classList.remove("active");
+      event.target.style.color = "silver";
+    }
+  })
+});

@@ -269,6 +269,26 @@ display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.white{
+    color: white;
+}
+.about-me{
+    padding: 50px 20vmin;
+}
+.about img{
+     box-shadow: 0 0  0px #fff;
+}
+.about-p{
+    font-size: calc(var(--main-fs-p) - 10px);
+}
+a.resume {
+    padding: 10px 20px;
+    border-radius:20px;
+   
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
 @media (max-width:1025px){
 .main-left{
     
@@ -489,4 +509,19 @@ font-size: calc(var(--main-fs-p) - 10px);
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.about-me{
+    padding: 20px 20vmin;
+}
+.about-p{
+    font-size: calc(var(--main-fs-p) - 15px);
+}
+a.resume {
+    padding: 10px 20px;
+    border-radius:20px;
+    font-size: calc(var(--main-fs-p) - 15px);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 }
