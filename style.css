@@ -257,6 +257,18 @@ display: flex;
     cursor: pointer;
     outline: none;
 }
+.slider{
+    margin: 0 auto;
+   padding:0 10vmin;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.h1-slider{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 @media (max-width:1025px){
 .main-left{
     
