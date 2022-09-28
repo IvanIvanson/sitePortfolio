@@ -17,7 +17,7 @@ window.addEventListener('scroll', function () {
     } else {
       navbar.classList.remove("bg-secondary");
       navbar.classList.add("bg-light");
-      navbar.style.opacity = 1;
+      navbar.style.opacity = 0.5;
         navbarNav.style.color = "black";
         logo.src = "./images/logo.png";
     }
