@@ -3,7 +3,16 @@ const navbar = document.querySelector('.navbar');
 const navbarNav = document.querySelector(".nav-link");
 const logo = document.querySelector(".logo");
 const navItems = document.querySelectorAll(".nav-item");
-
+// preloader
+let wrapper = document.querySelector('.wrapper');
+window.onload = function() {
+wrapper.classList.add('loaded_hiding');
+window.setTimeout(function(){
+wrapper.classList.add('loaded');
+wrapper.classList.remove('loaded_hiding');
+},500);
+}
+// end preloader
 window.addEventListener('scroll', function () {
     let attrLogo = logo.getAttribute("src"); 
     if (window.pageYOffset > innerHeight/10) {
