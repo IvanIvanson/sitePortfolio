@@ -10,7 +10,7 @@ wrapper.classList.add('loaded_hiding');
 window.setTimeout(function(){
 wrapper.classList.add('loaded');
 wrapper.classList.remove('loaded_hiding');
-},500);
+},100);
 }
 // end preloader
 window.addEventListener('scroll', function () {
